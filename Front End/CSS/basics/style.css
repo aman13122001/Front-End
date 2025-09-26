@@ -1,0 +1,74 @@
+/* Understanding Syntex */
+
+*{
+    
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* element selector */
+p{
+    color: aqua;
+}
+
+/* Class selector */
+.classname{
+    color: blue;
+
+}
+/* ID selector */
+#idname{
+    color: blueviolet;
+}
+/* Attribute Selector */
+input[type="text"]{
+    color: tomato;
+}
+
+#textstyle{
+        color: black; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        font-weight: 400;
+        line-height: 1.5;   
+        letter-spacing: 1px;
+        word-spacing: 5px;
+        text-decoration:none;
+        text-align: center;
+        text-transform: capitalize;
+}
+
+#shadow{
+    color:black;
+    text-shadow: 10px 10px 1px rgb(150, 59, 59);
+    
+}
+
+#border{
+    color: black;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+
+#bg{
+    height: 500px;
+    width: 500px;
+    background-color: bisque;
+    background-image: url(https://images.pexels.com/photos/34008907/pexels-photo-34008907.jpeg);
+    background-size: cover;
+
+}
+
+.linearbg{
+    height: 200px;
+    width: 200px;
+    /* background-color: aquamarine; */
+    background: linear-gradient(to right,red,yellow,cyan,purple);
+}
+.boxShadow{
+    height: 200px;
+    width: 200px;
+    background-color: aqua;
+    box-shadow: 10px 20px 100px olive;
+}
