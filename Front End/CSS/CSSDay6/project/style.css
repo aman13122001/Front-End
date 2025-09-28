@@ -17,9 +17,57 @@ body{
     background: white;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#us{
+    height:15%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+
+#inputBox{
+    height: 65%;
+    width: 100%;
+    /* background-color: salmon; */
+    padding: 35px;
     display: flex;
     flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    font-size: 20px;
+}
+input{
+    padding: 8px;
+    font-size: 15px;
+    width: 400px;
+    border-radius: 5px;
+}
+textarea{
+    width: 400px;
+    height: 180px;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 8px;
+}
+#butt{
+    width: 100%;
+    height: 20%;
+    /* background: saddlebrown; */
+    display: flex;
+    justify-content: start;
     align-items: center;
-    justify-content: space-evenly;
+    padding: 35px;
+}
 
+button{
+    height: 40px;
+    width: 94%;
+    color: white;
+    background: rgba(0, 0, 255, 0.747);
+    border-radius: 5px;
+    font-size: 15px;
 }
