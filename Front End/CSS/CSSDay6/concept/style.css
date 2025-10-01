@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    position: 0;
+    box-sizing: border-box;
+}
+/* html,body{
+    height: 100%;
+    width: 100%;
+} */
+/* % unit :- it's depend upon the parent.  */
+.parent{
+    height: 400px;
+    width: 50%;
+    background-color: wheat;
+}
+.child{
+    height: 100%;
+    width: 50%;
+    background-color: red;
+}
+/* rem:it's depend on parent font size.and depend on root element. */
+
+h1{
+    font-size: 3rem; /* 1rem=16px */
+}
+
+/* em:- it's depend on the parent font sixe. */
+
+.font{
+    font-size: 30px;
+}
+.font p{
+    font-size: 2em;
+}
+/* vh(viewport height) and vw(viewport wight) depend on the View port(screen).  */
+html,body{
+    height: 100vh;
+    width: 100vw;
+    
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+@media (min-width:600px) {
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(10, 10, 10);
+    }
+}
+@media (max-width:600px) {
+    .box{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(38, 22, 145);
+    }
+}
+
+.box1{
+    height: 500px;
+    width: 100%;
+    background-color: wheat;
+    display: grid;
+    grid-template-columns: 200px 200px 500px 200px;
+    grid-template-rows: 100px 200px 300px ;
+}
+
+.smallBox{
+    /* height: 200px; */
+    background-color: red;
+    border: 2px solid black;
+}
+
+.box2{
+    height: 300px;
+    width: 300px;
+    background-color: hotpink;
+    display: grid;
+    grid-template-areas: 
+    "a a a"
+    "b b b"
+    "c c c"
+    ;
+}
+.smallBox1{
+    background-color: red;
+    border: 2px solid black;
+}
+
+.child-a{
+    grid-area: a;
+    background-color: green;
+}
+.child-b{
+    grid-area: b;
+    background-color: rgb(70, 58, 105);
+}
+.child-c{
+    grid-area: c;
+    background-color: rgb(128, 0, 98);
+}
