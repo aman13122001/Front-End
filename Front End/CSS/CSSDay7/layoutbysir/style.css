@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.parent{
+    
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    padding: 10px;
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e"
+    "f"
+    "g"
+    "h"
+    "i"
+    "j"
+    
+    
+    ;
+
+}
+
+/* for Destop view */
+@media (min-width:1080px){
+    .parent{
+        grid-template-areas:
+    "a a b c"
+    "a a d e"
+    "f g j j"
+    "h i j j"
+    ;
+    }
+}
+
+.child-a{
+    grid-area: a;
+}
+.child-b{
+    grid-area: b;
+}
+.child-c{
+    grid-area: c;
+}
+.child-d{
+    grid-area: d;
+}
+.child-e{
+    grid-area: e;
+}
+.child-f{
+    grid-area: f;
+}
+.child-g{
+    grid-area: g;
+}
+.child-h{
+    grid-area: h;
+}
+.child-i{
+    grid-area: i;
+}
+.child-j{
+    grid-area: j;
+}
+
+img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    /* display: none; */
+  
+    
+}
