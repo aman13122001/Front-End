@@ -293,7 +293,7 @@ main {
 .section2 h1{
   font-family:hellb ;
   font-size: 180px;
-  background-image: url(./bloomMask\ Large_lvwFbM14_l.webp);
+  background-image: url(.//Assets/bloomMask\ Large_lvwFbM14_l.webp);
   background-size: cover;
   background-clip: text;
   position: relative;
