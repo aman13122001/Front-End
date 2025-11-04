@@ -99,8 +99,6 @@
 
 // abcd(1, 2, 3, 4, 5, 6, 7, 8);
 
-
-
 // hoisting:- js mein variables and functions unko js declaration waala part top pe move kr deta hai aur isey hu kahte hai hositing.
 
 // variable Hositing:-
@@ -108,17 +106,14 @@
 // console.log(a);
 // var a=12;
 
-
 // function Hositing:-
 
 // abcd();
 
 // function abcd(){
 //     console.log("Hello World");
-    
+
 // }
-
-
 
 // iife:- immediatety invoked function expression.
 
@@ -129,8 +124,171 @@
 
 // })();
 
+// Ex:-2
+
+// var ans = (function abcd(){
+//     var a=10;
+//     return a;
+// })();
+
+// Ex:-3
+
+// var ans = (function abcd(){
+//     var a =12;
+
+//     return{
+//         set: function (val){
+//             a=val;
+//         },
+//         get: function(){
+//             console.log(a);
+
+//         },
+//     };
+
+// })();
+
+// ans.set("32");
+// ans.get();
+
+// Ex:-4
+
+// var Shary= (function sherylibrary() {
+//     var abc = 12;
+//   return{
+    
+//     imageEffect: function(){
+//         console.log("Image effect");
+        
+//     },
+//     mouseFollower: function(){
+//         console.log("mouse follower");
+        
+//     },
+
+//   }
+// })();
+
+// Shary.imageEffect();
+// Shary.mouseFollower();
+
+// HOF:- Higher Order Function
+
+// ek aias Function jo yaa to return kare function nahi to accept kare function in parameter, ya fir dono.
+
+// Ex:-1
+
+// function abcd(){
+//   return function(){
+//     console.log("Heyheyhey");
+    
+//   }
+// }
+// abcd()();
 
 // Ex:-2
+
+// function abcd(){
+//   return function(){
+//     console.log("Heyheyhey");
+    
+//   }
+// }
+// var ans =abcd();
+// ans();
+
+
+// Ex:-3
+
+// function abcd(fuc){
+//   fuc();
+// }
+
+// abcd(function(){
+//   console.log("HeyHeyhello");
+  
+// })
+
+
+// CallBack function:- Kosi function mein jo function pass hota hai call krye wakt usey callback function kahte hai. 
+
+// Ex:-
+// function abcd(val){
+
+// }
+
+// abcd(function(){
+
+// })
+
+// First Class Function:-  first class function ek darja hai jo ki js mein function ko mila hai , is darje mein kaha jaata hai ki fnction ko aap value ki tarah use kr sakte ho.
+
+// Pure function:- A function without side effects(does not modify external state).
+
+// Ex:-
+
+// function add(a,b) {
+//   return a+b;
+  
+// }
+// console.log(add(2,4)); 
+
+// Impure Function:- A function that modifies external stste.
+
+// let totol =0;
+// function addTotal(a){
+//     totol+=a; //Modifies external variable
+// }
+// addTotal(5);
+// console.log(totol);
+
+
+// Global Scope:- When a variable is declared outside of all function or blocks, it has global scope. That means the variable can be accessed from anywhere in the program inside function, loops, or any other blocks.
+
+
+// Ex- 
+
+
+// var a=12; //Global Scope
+
+// function abcd(){
+//     console.log(a);
+    
+// }
+// abcd();
+
+
+// Local Scope:- A variable has local scope when it declared inside a function or a block ({...}). that means it can be used only inside that function or block - not outside it.
+
+// ex:-
+
+// function abcd(){
+//     var a=12; //local Scope
+//     console.log(a);
+    
+// }
+// abcd();
+
+// What is Closure in JS?
+
+// Ans:- A closure is when a function remembers and acesses variables from its outer function - even after that outer function has finished running.
+
+//( Closure ek concept hai jismeie  function return karta hai ek aur function aand returnrd function mein app use krte ho parent function ka koi data.)
+
+// Ex:-
+
+//  function absd(){
+//     var a=18;
+//     return function(){
+//         console.log(a);
+        
+//     }
+//  }
+// var ans = absd();
+// ans();
+
+// or
+// absd()();
 
 
 
