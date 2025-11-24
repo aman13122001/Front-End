@@ -101,14 +101,26 @@
 // };
 
 // obj.age=27;
-// console.log(obj.age);
+// console.log(obj);
+
+// We can freeze the object .
+
+// const obj ={
+//     name: "Aman",
+//     age: 25,
+//     email:"aman1312@gmail.com"
+// };
+
+// Object.freeze(obj);
+// obj.age=27;
+// console.log(obj);
 
 
 
 
 // 7. Convert "50" (string) into a number using 3 different methods.
 
-
+ 
 // let a=Number("50");
 // console.log(typeof a);
 // console.log(a);
